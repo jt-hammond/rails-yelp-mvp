@@ -1,0 +1,36 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <a href="/" class="navbar-wagon-brand">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyBAMAAADsEZWCAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAAqUExURUdwTN0rAN0qAN8sAN0rAN0rAN0rAN0rAN4qAN0rAN0tAN0rAN0rAN0qABFgp7AAAAAOdFJOUwD+8grG3ZJ+UageZ0Ut85jGMAAAAWtJREFUOBG90jFLw0AUB/AHkSrRQF+xSjeLUxEhg9kbQbIaQVyLU0cd3Fv8AnYQOxYXJ6HVyS1VcK7iB/L/LknJXd+qN7R373fv7nL3iP65BW9nB+qWTzFzU5MaozU0mYmwJkMjoUJrRiaKBEYWitC1UKZJJDLQZEtkqgmNIFeqPEJ6qmyW8rzCMfMdgkG759IXcxexiHddWc9ltHp4L+VTItlu302ai3xDdlypcZe8GMITh7z7jMwLVr/4clzMGkpKRXzmi3yFVCAJl6ttYNjKZJhyI/lYxonwKaicV0R+HqpxKvZtVeaW3fxEWlHlouWYfToDLPHeuS0XMv84W7MfShdnG5uODNC842SBlzmfUoxDOmnwiPdoDuEGplkt5vrqvckMHLBOXluSMiuDZiI0BGzbIKUIkdI/tEUeExK03VJFFRhB6TuPbS4IOXTkVqq5IBG/jx+rvRSrWUEz8G8Yd6C3z5OpDn8b/QVASz0NgOWkVAAAAABJRU5ErkJggg==">
+  </a>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+    <%= link_to "New Restaurant", new_restaurant_path %>
+
+    <!-- Profile picture with dropdown list -->
+<!--     <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <img src="https://kitt.lewagon.com/placeholder/users/ssaunier" class="avatar dropdown-toggle" id="navbar-wagon-menu" data-toggle="dropdown">
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </div> -->
+  </div>
+
+  <!-- Dropdown appearing on mobile only -->
+  <div class="navbar-wagon-item hidden-md hidden-lg">
+    <div class="dropdown">
+      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+        <li><a href="#">Host</a></li>
+        <li><a href="#">Trips</a></li>
+        <li><a href="#">Messagese</a></li>
+      </ul>
+    </div>
+  </div>
+</div>

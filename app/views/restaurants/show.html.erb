@@ -1,2 +1,44 @@
-<h1>Restaurants#show</h1>
-<p>Find me in app/views/restaurants/show.html.erb</p>
+<div class="container">
+
+  <ul>
+    <li><h1><%= @restaurant.name %></h1></li>
+    <li><img src="http://lorempixel.com/400/400/food/" alt="food_image"></li>
+    <li><%= link_to "Review", new_restaurant_review_path(@restaurant)%></li>
+    <li><p><%= @restaurant.phone_number  %></p></li>
+    <li><p><%= @restaurant.address  %></p></li>
+    <li><p><% @restaurant.avg_rating.times {%><i class= 'fa fa-star'></i><% } %></p></li>
+
+  </ul>
+
+
+<!--   <table class="show-table">
+    <tr class="rating-row">
+
+    </tr>
+    <tr>
+      <td>
+        <div class="name" >
+          <h1><%= @restaurant.name %></h1>
+        </div>
+      </td>
+      <td>
+        <img src="http://lorempixel.com/400/400/food/" alt="food_image">
+          <div class="middle">
+            <div class="text"><%= link_to "Review", new_restaurant_review_path(@restaurant)%></div>
+          </div>
+      </td>
+    </tr>
+    <tr class="bottom-row">
+      <td>
+        <div class="address-block">
+          <p><%= @restaurant.phone_number  %></p>
+          <p><%= @restaurant.address  %></p>
+        </div>
+      </td>
+      <td>
+      </td>
+    </tr>
+  </table>
+</div>
+
+ -->
